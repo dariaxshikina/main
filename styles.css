@@ -1,0 +1,654 @@
+body {
+    margin: 0;
+    background-color: #f6f6ed;
+}
+.dropbtn {
+    display: none;
+}
+.navbar, .nav, .navigate {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #edd3ca;
+}
+.navbar {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 3%);
+    margin-bottom: 10px;
+}
+.navigate {
+    width: 30%;
+}
+.nav {
+    width: 70%;
+}
+
+.menu-item {
+    padding: 20px 30px;
+    color: #313131;
+    text-decoration: none;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 18px;
+    transition-duration: 0.4s
+}
+.logo {
+    margin-right: auto;
+    font-size: 20px;
+}
+.cart {
+    margin-left: auto;
+}
+.menu-item:hover {
+    text-decoration: underline;
+}
+.logo:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.starter {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.one, .oneabout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.two, .twoabout {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.frontbanner, .aboutbanner {
+    width: 75%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+.banner-btn {
+    padding: 15px 30px;
+    border: 1px solid #313131;
+    color: #313131;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 20px;
+    background-color: #f6f6ed;
+    transition-duration: 0.7s;
+}
+.banner-btn:hover {
+    background-color: #313131;
+    color: #f6f6ed;
+}
+.banner-text {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: #313131;
+    text-align: center
+}
+.banner-head {
+    font-family: 'Domaine Display Narrow', sans-serif;
+    margin: 0;
+    padding: 10px;
+    font-size: 60px;
+    font-weight: 500;
+    color: #313131;
+    text-align: center
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 30px 0px;
+}
+.product-layout {
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+}
+.product-card {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.5s;
+    width: 25%;
+}
+.product-cover {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    width: 100%;
+    margin-bottom: 5px;
+}
+.product-name {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 15px;
+    color: #313131;
+}
+.product-card:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+.inst-link {
+    color: #313131;
+    text-decoration: none;
+}
+.inst-link:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 50vh;
+    background-color: #f5eef8;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    flex-wrap: wrap;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px;
+}
+.footer-heading {
+    font-family: 'Domaine Display Narrow', sans-serif;
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #313131;
+}
+.footer-item {
+    padding: 10px;
+    color: #313131;
+    text-decoration: none;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 18px;
+    transition-duration: 0.4s
+}
+ion-icon {
+    font-size: 30px;
+    color: #313131; 
+    transition: 0.5s;
+}
+.social {
+    align-self: center;
+}
+ion-icon:hover {
+    opacity: 0.7;
+}
+.footer-item:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+.legal {
+    align-self: flex-end;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #313131;
+}
+
+/* page with size */
+.vid {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+table, th, td {
+    border: 1px solid #edd3ca;
+    border-collapse: collapse;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 20px;
+    color: #313131;
+}
+th, td {
+    padding: 15px 50px;
+}
+table {
+    margin-bottom: 20px;
+}
+.table-sizing {
+    display: flex;
+    justify-content: center;
+}
+.info {
+    width: 75%;
+    margin: 0 auto;
+    word-spacing: 3px;
+    line-height: 30px;
+}
+
+/* faq page */
+.faq {
+    width: 75%;
+    margin: 50px auto;
+    text-align: center;
+}
+.faq-head {
+    font-family: 'Domaine Display Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #313131;
+}
+.faq-text {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 18px;
+    color: #313131;
+}
+
+/* contact page and order paige*/
+.text-area {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+.area {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #313131;
+    border: none;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    outline: none;
+    font-size: 18px ;
+    transition: 0.8s;
+}
+.area:focus {
+    border: 2px solid #313131;
+}
+label {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 18px;
+    color: #313131;
+    margin-bottom: 5px;
+}
+.textarea {
+    width: auto;
+    height: 150px;
+}
+select {
+    margin-bottom: 10px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 16px;
+}
+
+
+/* about page */
+
+.about-text {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 20px;
+    color: #313131;
+    padding-left: 60px;
+    line-height: 30px;
+}
+.about-text-alt {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 20px;
+    color: #313131;
+    padding-right: 60px;
+    line-height: 30px;
+}
+#myVideo {
+    width: 65%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+
+/* shop - main paige */
+
+h1 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 80px;
+    margin: 0;
+    color: #313131;
+}
+.h1heading {
+    display: flex;
+    justify-content: center;
+}
+.shop-head {
+    font-family: 'Domaine Display Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 500;
+    color: #313131;
+}
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.content-card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    transition: 0.5s;
+}
+.content-cover {
+    width: 100%;
+}
+.content-info {
+    list-style: none;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #313131;
+}
+.list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-card:hover {
+    cursor: pointer;
+    transform: translate(0px, -8px);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+}
+.product-link {
+    text-decoration: none;
+    color: #313131;
+}
+
+/* shop - individual items */
+
+.item-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.item-img-layout {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.item-description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.item-img {
+    width: 75%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    margin-bottom: 2px;
+}
+.item-brand-head {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #313131;
+}
+.item-heading {
+    font-family: 'Domaine Display Narrow', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #313131;
+}
+.item-size {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #313131;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.size-ion {
+    font-size: 15px;
+    color: #313131;
+}
+.order-btn {
+    margin: 20px 0;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid #313131;
+    color: #313131;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 20px;
+    background-color: #f6f6ed;
+    transition-duration: 0.7s;
+}
+.order-btn:hover {
+    background-color: #313131;
+    color: #f6f6ed;
+}
+.item-info{
+    list-style: none;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #313131;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.item-info-list {
+    padding: 0;
+}
+
+/* color page */
+
+.yarn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 0 auto
+}
+.yarn-card {
+    width: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #313131;
+    transition: 0.5s;
+}
+.yarn-card:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.yarn-text {
+    align-self: center;
+    text-transform: capitalize;
+    text-align: center;
+}
+.color-choice {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 50%;
+    width: 100%;
+}
+
+@media all and (max-width: 820px) {
+    body {
+        background-color: #f5eef8;
+    }
+    .banner-btn, .order-btn {
+        background-color: #f5eef8 ;
+    }
+    .banner-head {
+        font-size: 40px;
+    }
+
+    .footer {
+        background-color: #f6f6ed;
+    }
+    .menu-item {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .starter {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .two, .twoabout {
+        width: 100%;
+    }
+    .one {
+        position: absolute;
+        z-index: 1;
+        width: 75%;
+        text-shadow: 10px 2px 20px #f6f6ed, -1px 0 #f6f6ed, 0 1px #f6f6ed, 1px 0 #f6f6ed, 0 -1px #f6f6ed;
+    }
+    th, td {
+        padding: 15px 20px;
+    }
+    .vid {
+        padding: 30px;
+    }
+    #myVideo {
+        flex: 1;
+    }
+    .about-text-alt, .about-text {
+        padding: 0 10px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    body {
+        background-color: #f7f6f5;
+    }
+    .banner-btn, .order-btn {
+        background-color: #f7f6f5;
+    }
+
+    /* drop down nav */
+    .navigate {
+        display: flex;
+        width: 100%;
+    }
+    .dropbtn {
+        display: inline-block;
+        padding-left: 20px;
+        color: #313131;
+        width: 100%;
+        font-size: 25px;
+        transition: 0.5s;
+    }
+    .navbar {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        background-color: #edd3ca;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2;
+        width: 100%;
+    }
+    .menu-item {
+        color: #313131;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .navbar:hover .nav {
+        display: block;
+    }
+ /* main page */
+    
+    .starter {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .footer {
+        height: 100%;
+    }
+    .footer-column {
+        padding: 10px 20px;
+    }
+    .footer-heading {
+        font-size: 20px;
+    }
+    .footer-item {
+        font-size: 12px;
+    }
+    .heading {
+        margin: 25px 0px 15px 0px;
+    }
+    .product-layout {
+        flex-direction: column;
+    }
+    .product-card {
+        width: 75%;
+    }
+    .banner-head {
+        font-size: 30px;
+        text-align: center;
+    }
+    .banner-text {
+        font-size: 16px;
+    }
+    .two {
+        height: 60vh;
+}
+/* shop main page */
+    .shop-head {
+        font-size: 30px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content-card {
+        width: 40%;
+    }
+    .content-info {
+        text-align: center;
+    }
+    /* size page */
+    th, td {
+        padding: 5px 15px;
+    }
+    table, th, td {
+        font-size: 14px;
+    }
+    table {
+        margin: 5px;
+    }
+    .info {
+        width: 85%;
+    }
+    /* faq */
+    .faq {
+        width: 85%;
+    }
+    /* order */
+    .text-area {
+        width: 85%;
+    }
+    /* colors */
+    .yarn-card {
+        width: 25%;
+        padding: 10px
+
+    }
+    .yarn {
+        width: 85%;
+    }
+    /* about page */
+    .oneabout {
+        width: 85%;
+        height: 100%;
+    }
+    .twoabout {
+        width: 85%;
+    }
+
+
+}
+
