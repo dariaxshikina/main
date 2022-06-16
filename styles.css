@@ -1,5 +1,11 @@
-@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
-@import url('http://fonts.cdnfonts.com/css/domaine-display-narrow');
+@font-face {
+    font-family: 'Domaine Disp Nar';
+    src: url('fonts/DomaineDispNarMedium.woff2') format('woff2'),
+        url('fonts/DomaineDispNarMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
     margin: 0;
